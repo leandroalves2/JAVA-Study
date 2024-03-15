@@ -1,0 +1,65 @@
+import java.util.Date;
+
+public class Empresa {
+	
+	private String nome;
+	private String cnpj;
+	private String endereco;
+	private Date dataFundacao;
+	private float faturamento;
+	
+	public void Imprimir()
+	{
+		System.out.println("Name: " + nome);
+		System.out.println("CNPJ: " + cnpj);
+		System.out.println("Endereço: " + endereco);
+		System.out.println("Data da fundação: " + dataFundacao);		
+	}
+	
+	public String GetNome()
+	{
+		return nome;
+	}
+	
+	public void SetNome(String nome)
+	{
+		this.nome = nome;
+	}
+	
+	public String GetCnpj()
+	{
+		return cnpj;
+	}
+	public void SetCnpj(String cnpj)
+	{
+		this.cnpj = cnpj;
+	}
+	
+	public String GetEndereco()
+	{
+		return endereco;
+	}
+	public void SetEndereço(String endereco)
+	{
+		this.endereco = endereco;
+	}
+	
+	public Date GetDataFundacao()
+	{
+		return dataFundacao;
+	}
+	public void SetDataFundacao(Date dataFundacao)
+	{
+		this.dataFundacao = dataFundacao;
+	}
+	
+	public float GetFaturamento()
+	{
+		return faturamento;
+	}
+	public void SetFaturamento(float faturamento)
+	{
+		this.faturamento = faturamento;
+	}
+
+}

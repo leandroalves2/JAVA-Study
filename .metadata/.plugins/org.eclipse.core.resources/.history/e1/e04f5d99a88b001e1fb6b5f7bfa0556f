@@ -1,0 +1,36 @@
+import java.util.*;
+import java.util.HashMap;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Map<Integer, String> mapNames = new HashMap<Integer, String>();			
+		mapNames.put(1, "Leandro");
+		mapNames.put(2, "Karoline");
+		mapNames.put(3, "Luis");
+		mapNames.put(4, "Celisa");		
+		System.out.println(mapNames.keySet());		
+		System.out.println(mapNames.values());
+		mapNames.remove(4);
+		System.out.println(mapNames.entrySet());
+		System.out.println(mapNames.get(2));
+		System.out.println(mapNames.get(4));
+		
+		System.out.println("");
+		
+		Enumeration names;
+		String key;
+		Hashtable<String, String> hashtable = new Hashtable<String, String>();
+		hashtable.put("Chave1", "Leandro");
+		hashtable.put("Chave2", "Karoline");
+		hashtable.put("Chave3", "Luis");
+		hashtable.put("Chave4", "Celisa");
+		names = hashtable.keys();
+		while(names.hasMoreElements()){
+			key = (String) names.nextElement();
+			System.out.println("Chave: " + key + "& Valor: " + hashtable.get(key));
+		}		
+	}
+}
+;
